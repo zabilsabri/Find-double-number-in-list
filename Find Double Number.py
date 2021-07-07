@@ -7,5 +7,8 @@ for i in sorted(set(a)):
     count = a.count(i)
     if count == 1:
         b.append(i)
-        
-print(b)
+
+if len(b) != 0:
+    print(b)
+else:
+    print("THERE IS NO DOUBLE NUMBER!")
