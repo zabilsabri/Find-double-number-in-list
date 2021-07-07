@@ -1,19 +1,16 @@
 __foundby__ = "zabilsabri"
 
-a = [5, 4, 4, 3, 3]
-b = []
-a.sort()
+n = [5, 4, 5, 5, 3]
+m = list(set(n))
+o = []
 
-v = len(a)
-p = a[v-1]
-q = a[0]
-
-for i in range(q, p+1):
-    a.remove(i)
-    if i not in a:
-        b.append(i)
-
-if len(b) == 0:
-    print("All Number Is Double!")
+for i in m:
+    if i in n:
+        n.remove(i)
+    if i not in n:
+        o.append(i)
+        
+if len(o) != 0:
+    print(o)
 else:
-    print(b)
+    print("THERE IS NO DOUBLE NUMBER THERE!")
