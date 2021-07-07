@@ -1,16 +1,11 @@
 __foundby__ = "zabilsabri"
 
-n = [5, 4, 5, 5, 3]
-m = list(set(n))
-o = []
+a = [5,4,2,2,1,1]
+b = []
 
-for i in m:
-    if i in n:
-        n.remove(i)
-    if i not in n:
-        o.append(i)
+for i in sorted(set(a)):
+    count = a.count(i)
+    if count == 1:
+        b.append(i)
         
-if len(o) != 0:
-    print(o)
-else:
-    print("THERE IS NO DOUBLE NUMBER THERE!")
+print(b)
